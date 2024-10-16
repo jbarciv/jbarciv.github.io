@@ -28,8 +28,8 @@
         "name": "Center for Industrial Electronics - Technical University of Madrid",
         "location": "Madrid",
         "position": "Research Internship",
-        "startDate": "2023-02",
-        "endDate": "2023-08",
+        "startDate": "2023-02-1",
+        "endDate": "2023-08-01",
         "highlights": [
           "Configured a GPU microserver with 2 NVIDIA A30 GPUs and 24 CPUs.",
           "Implemented CPU-GPU acceleration architecture using Multi-Instance GPU (MIG) and the multiprocessing library with Python.",

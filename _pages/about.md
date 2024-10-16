@@ -18,7 +18,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Here goes my short biography!
+I am a PhD student at the [Center for Automation and Robotics](https://www.car.upm-csic.es/) (UPM-CSIC), and part of the [Autopia](https://autopia.car.upm-csic.es/) research group, advised by [Dr. Jorge Villagrá](https://autopia.car.upm-csic.es/people/jorge-villagra/).
+
+My current research centers on autonomous vehicles, with a specific focus on trajectory generation and decision‑making in driving scenarios.
+Additionally, I am exploring related topics such as systems simulation, ODD‑aware and reinforcement learning.
 
 <!--Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

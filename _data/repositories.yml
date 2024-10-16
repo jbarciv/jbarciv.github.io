@@ -3,16 +3,8 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-- jbarciv/Hyper-ViNL
 - jbarciv/DNN-FittyPlot
-- albertoibernon/Autonomous_Surveillance_Robot
-- jbarciv/LegoMasters
-- jbarciv/DrowsyDrive-Alert
-- jbarciv/ClusterDynamics
-- jbarciv/Farkle-VHDL
-- jbarciv/washTunnel
-- jbarciv/Backtracking-Maze-Generator
-- jbarciv/Asteroids-with-openGL
+
 
 
 

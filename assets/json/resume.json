@@ -16,7 +16,7 @@
         {
           "network": "LinkedIn",
           "username": "josep-barbera",
-          "url": "https://www.linkedin.com/in/josep-barbera/",
+          "url": "https://www.linkedin.com/in/josep-barbera/"
           
         }
       ]
@@ -33,7 +33,7 @@
         "highlights": [
           "Configured a GPU microserver with 2 NVIDIA A30 GPUs and 24 CPUs.",
           "Implemented CPU-GPU acceleration architecture using Multi-Instance GPU (MIG) and the multiprocessing library with Python.",
-          "Prepared a poster for the XV CEI Annual Meeting. [PDF link](https://drive.google.com/file/d/1Ap9O2NKAJcR9T9Fx5WK6oZV5PRMrRl1O/view?usp=sharing)."
+          "Prepared a poster for the XV CEI Annual Meeting. [PDF link:https://drive.google.com/file/d/1Ap9O2NKAJcR9T9Fx5WK6oZV5PRMrRl1O/view?usp=sharing]."
         ]
       },
       

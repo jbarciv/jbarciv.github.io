@@ -53,7 +53,7 @@
   ],
   "education": [
     {
-      "endDate": "in progress",
+      "endDate": "Oct 2028",
       "startDate": "Oct 2024",
       "area": "Autonomous Driving",
       "studyType": "PhD",
@@ -99,7 +99,7 @@
       "keywords": [
         "Git version-control", 
         "Latex", 
-        "Linux OS"
+        "Linux"
       ],
       "level": "",
       "name": "Other"

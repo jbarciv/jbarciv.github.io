@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD student at the [Center for Automation and Robotics](https://www.car.upm-csic.es/) (UPM-CSIC), and part of the [Autopia](https://autopia.car.upm-csic.es/) research group, advised by [Dr. Jorge Villagrá](https://autopia.car.upm-csic.es/people/jorge-villagra/).
+I am a PhD student at the [Center for Automation and Robotics](https://www.car.upm-csic.es/) (UPM-CSIC), and part of the [Autopia](https://www.car.upm-csic.es/en/conduccion-automatica-de-vehiculos/) research group, advised by [Dr. Jorge Villagrá](https://www.linkedin.com/in/jorge-villagra-serrano/).
 
 My current research centers on autonomous vehicles, with a specific focus on trajectory generation and decision‑making in driving scenarios.
 Additionally, I am exploring related topics such as systems simulation, ODD-awareness and reinforcement learning.

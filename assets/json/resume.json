@@ -28,8 +28,8 @@
       "name": "Center for Industrial Electronics - Technical University of Madrid",
       "location": "Madrid",
       "position": "Research Internship",
-      "startDate": "Feb 2023",
-      "endDate": "Aug 2023",
+      "startDate": "2023",
+      "endDate": "(6 months)",
       "highlights": [
         "Configured a GPU microserver with 2 NVIDIA A30 GPUs and 24 CPUs.",
         "Implemented CPU-GPU acceleration architecture using Multi-Instance GPU (MIG) and the multiprocessing library with Python."
@@ -42,8 +42,8 @@
       "name": "IMDEA Materials Institute",
       "location": "Getafe, Madrid",
       "position": "Research Initiation Fellowship",
-      "startDate": "Jun 2022",
-      "endDate": "Oct 2022",
+      "startDate": "2022",
+      "endDate": "(4 months)",
       "highlights": [
         "Characterized oscillations and identified their conditions of occurrence through computational modeling.",
         "Analyzed DNN (Dendritic Needle Network - C++ and Cuda based) simulations using Python.",

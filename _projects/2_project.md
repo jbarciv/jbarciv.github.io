@@ -1,81 +1,79 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: CIV Summer School
+description: 2025, Blonay, Switzerland
+img: assets/img/projects/civ_2025/6.jpeg
+importance: 1
+category: Others
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<div class="row mt-4 mb-5">
+  <div class="col-md-12">
+    <video width="100%" height="500" autoplay loop controls>
+      <source src="/assets/img/projects/civ_2025/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+As part of my first-year PhD training, I had the opportunity to attend the [Cooperative and Interactive Vehicles (CIV) Summer School 2025](https://lnkd.in/dG-fbwTi) in Blonay, Switzerland 🇨🇭. I am very grateful to [Arnaud de La Fortelle](https://scholar.google.com/citations?user=EbiLLC0AAAAJ&hl=en) and the organizers for creating such an inspiring environment for discussions, collaboration, and networking with leading researchers and industry experts in AI, data, connected vehicles, and intelligent transportation systems.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Following the inspiring discussions at CIV Summer School, I am advancing research on **ODD-aware decision-making** for autonomous vehicles. This work, developed within the [Shape Future](https://shapefuture.eu/) project, contributes to Europe’s goal of creating safe, resilient, and future-proof electronics for automated mobility.
+
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/civ_2025/3.JPG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/civ_2025/2.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/civ_2025/4_1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    During the Summer School, I connected with new people and expanded my professional network.
+
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/civ_2025/5.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+The presence of leading scientists and experts, including [Manabu Tsukada](https://tlab.hongo.wide.ad.jp/People/manabu-tsukada/), [Christoph Stiller](https://www.mrt.kit.edu/english/mitarbeiter_stiller.php), [Matthieu Carré](https://www.linkedin.com/in/matthieucarreutc/), [Ahmed Hussein](https://scholar.google.com/citations?user=q8vHonoAAAAJ&hl=en), [Jeroen A. Beukers](https://www.linkedin.com/in/jeroenbeukers), [Sascha Hornauer](https://scholar.google.com/citations?user=G_dpt9kAAAAJ&hl=en), and [Peggy Wang](https://its.berkeley.edu/people/peggy-wang), led to insightful and highly enriching lectures. I am truly grateful to all of them for sharing their knowledge and inspiration.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/civ_2025/6.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/projects/civ_2025/1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    We also had poster sessions!
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+<div class="mt-5">
+    <p>Here my poster and the certificate:</p>
+</div>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row mt-2">
+    <div class="col-md-12">
+        <iframe src="/assets/img/projects/civ_2025/poster.pdf" width="100%" height="600px" style="border:1px solid #ccc;">
+            Your browser does not support PDFs. <a href="/assets/img/projects/civ_2025/poster.pdf">Download PDF</a>.
+        </iframe>
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+</div>
+
+<div class="row mt-2">
+    <div class="col-md-12">
+        <iframe src="/assets/img/projects/civ_2025/certificate.pdf" width="100%" height="600px" style="border:1px solid #ccc;">
+            Your browser does not support PDFs. <a href="/assets/img/projects/civ_2025/certificate.pdf">Download PDF</a>.
+        </iframe>
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

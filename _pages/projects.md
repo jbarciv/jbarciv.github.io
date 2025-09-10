@@ -1,7 +1,7 @@
 ---
 layout: page
 title: events
-permalink: /projects/
+permalink: /events/
 description: Conferences, Workshops, and Other events attended
 nav: true
 nav_order: 3

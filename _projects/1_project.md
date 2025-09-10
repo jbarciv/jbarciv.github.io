@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Junior EUROMAT
-description: 2022, Coimbra, Portugal
+description: Jul. 2022, Coimbra, Portugal
 img: assets/img/projects/junior_euromat/7.jpeg
 importance: 1
 category: Conferences

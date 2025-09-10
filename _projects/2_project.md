@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CIV Summer School
-description: 2025, Blonay, Switzerland
+description: Sep. 2025, Blonay, Switzerland
 img: assets/img/projects/civ_2025/6.jpeg
 importance: 1
 category: Others

@@ -61,11 +61,14 @@
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        {% if site.scholar.last_name contains author_last_name %}
-          {% if site.scholar.first_name contains author.first %}
+        {% if author_last_name == site.last_name %}
+          {% assign author_first_lower = author.first | downcase | strip %}
+          {% assign self_first_lower = site.first_name | downcase | strip %}
+          {% assign self_full_first_lower = self_first_lower | append: ' ' | append: site.middle_name | downcase | strip %}
+          {% if author_first_lower == self_first_lower or author_first_lower == self_full_first_lower %}
             {% assign author_is_self = true %}
           {% endif %}
-        {%- endif -%}
+        {% endif %}
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
         {% if site.data.coauthors[clean_last_name] %}
@@ -82,10 +85,10 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <strong>
             {{- author.first }}
             {{ author_last_html -}}
-          </em>
+          </strong>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
@@ -174,7 +177,9 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% capture entrydate %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% assign entrydate = entrydate | strip %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entrydate != "" %}, {% endif %}{% if entrydate != "" %}<strong>{{ entrydate }}</strong>{% endif %}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>

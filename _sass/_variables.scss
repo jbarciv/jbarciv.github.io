@@ -18,6 +18,8 @@ $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
+$sage-green-color: #2f7f52 !default; // soft green for links (light mode)
+$sage-green-color-light: #6fbf8e !default; // soft green for links (dark mode)
 $purple-color: #b509ac !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;

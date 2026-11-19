@@ -28,6 +28,67 @@
         {% endfor %}
       </table>
     </div>
+    <script>
+      // Avoid ugly wraps in news items: never leave an emoji alone on a line, and when an
+      // item wraps, carry at least the last three words (plus the trailing emoji) to the new line.
+      // Browsers always allow a break next to an <img>, so the emoji is wrapped in a nowrap span
+      // together with its neighbouring word, and the last spaces become non-breaking.
+      (function () {
+        var GLUED_SPACES = 2;
+        var nowrap = function () {
+          var span = document.createElement('span');
+          span.style.whiteSpace = 'nowrap';
+          return span;
+        };
+        document.querySelectorAll('.news td').forEach(function (td) {
+          td.querySelectorAll('img.emoji').forEach(function (img) {
+            var span = nowrap();
+            img.parentNode.insertBefore(span, img);
+            var prev = span.previousSibling;
+            var next = img.nextSibling;
+            span.appendChild(img);
+            if (prev && prev.nodeType === Node.TEXT_NODE && /\S\s*$/.test(prev.data)) {
+              var tail = prev.data.match(/\S*\s*$/)[0];
+              prev.data = prev.data.slice(0, prev.data.length - tail.length);
+              span.insertBefore(document.createTextNode(tail.replace(/\s+/g, ' ')), img);
+            } else if (next && next.nodeType === Node.TEXT_NODE && /^\s*\S/.test(next.data)) {
+              var head = next.data.match(/^\s*\S*/)[0];
+              next.data = next.data.slice(head.length);
+              span.appendChild(document.createTextNode(head.replace(/\s+/g, ' ')));
+            }
+          });
+          // Hyphens are break opportunities too ("GPU-" / "accelerated"); use non-breaking hyphens.
+          var hyphens = document.createTreeWalker(td, NodeFilter.SHOW_TEXT);
+          while (hyphens.nextNode()) hyphens.currentNode.data = hyphens.currentNode.data.replace(/-/g, '‑');
+          // Collect the breakable spaces between words (ignoring the cell's leading/trailing
+          // whitespace) and turn the last GLUED_SPACES of them into non-breaking spaces.
+          var walker = document.createTreeWalker(td, NodeFilter.SHOW_TEXT);
+          var runs = [];
+          var seenWord = false;
+          var pending = [];
+          while (walker.nextNode()) {
+            var node = walker.currentNode;
+            var re = /[ \t\n\r]+|[^ \t\n\r]+/g;
+            var m;
+            while ((m = re.exec(node.data))) {
+              if (/^[ \t\n\r]/.test(m[0])) {
+                if (seenWord) pending.push({ node: node, index: m.index, length: m[0].length });
+              } else {
+                seenWord = true;
+                runs = runs.concat(pending);
+                pending = [];
+              }
+            }
+          }
+          runs
+            .slice(-GLUED_SPACES)
+            .reverse()
+            .forEach(function (r) {
+              r.node.data = r.node.data.slice(0, r.index) + ' ' + r.node.data.slice(r.index + r.length);
+            });
+        });
+      })();
+    </script>
   {% else %}
     <p>No news so far...</p>
   {% endif %}

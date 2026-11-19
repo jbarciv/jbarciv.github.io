@@ -1,11 +1,13 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: cv
 nav: true
 nav_order: 3
-cv_pdf: CV_Josep_Barbera_.pdf
-description: #This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-# toc:
-#   sidebar: left
 ---
+
+<div style="width: 100%; height: calc(100vh - 120px);">
+  <iframe src="/assets/pdf/CV_Josep_Barbera_.pdf" style="width: 100%; height: 100%; border: none;">
+    Your browser does not support PDFs. <a href="/assets/pdf/CV_Josep_Barbera_.pdf">Download the PDF</a>.
+  </iframe>
+</div>

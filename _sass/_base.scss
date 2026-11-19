@@ -721,11 +721,6 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
 
-      .author,
-      .periodical {
-        font-size: 0.875rem;
-      }
-
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -734,10 +729,6 @@ footer.sticky-bottom {
             border-bottom-style: solid;
             text-decoration: none;
           }
-        }
-
-        > strong {
-          font-weight: bolder;
         }
 
         > em {

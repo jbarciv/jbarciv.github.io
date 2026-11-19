@@ -21,8 +21,6 @@ As part of my first-year PhD training, I had the opportunity to attend the [Coop
 
 Following the inspiring discussions at CIV Summer School, I am advancing research on **ODD-aware decision-making** for autonomous vehicles. This work, developed within the [Shape Future](https://shapefuture.eu/) project, contributes to Europe’s goal of creating safe, resilient, and future-proof electronics for automated mobility.
 
-
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/civ_2025/3.JPG" title="example image" class="img-fluid rounded z-depth-1" %}

@@ -17,7 +17,6 @@
         "network": "LinkedIn",
         "username": "josep-barbera",
         "url": "https://www.linkedin.com/in/josep-barbera/"
-        
       }
     ]
   },
@@ -35,7 +34,7 @@
         "Implemented CPU-GPU acceleration architecture using Multi-Instance GPU (MIG) and the multiprocessing library with Python."
       ]
     },
-    
+
     {
       "summary": "Contributed to research on computational oscillatory growth instability in directional solidifications.",
       "website": "https://materiales.imdea.org/people/damien-tourret/",
@@ -78,29 +77,17 @@
   ],
   "skills": [
     {
-      "keywords": [
-        "C/C++", 
-        "Python", 
-        "Shell"
-      ],
+      "keywords": ["C/C++", "Python", "Shell"],
       "level": "",
       "name": "Languages"
     },
     {
-      "keywords": [
-        "VSCode",
-        "Matlab",
-        "Jupyter Notebook"
-      ],
+      "keywords": ["VSCode", "Matlab", "Jupyter Notebook"],
       "level": "",
       "name": "Tools"
     },
     {
-      "keywords": [
-        "Git version-control", 
-        "Latex", 
-        "Linux"
-      ],
+      "keywords": ["Git version-control", "Latex", "Linux"],
       "level": "",
       "name": "Other"
     }
@@ -119,4 +106,4 @@
       ]
     }
   ]
-} 
+}

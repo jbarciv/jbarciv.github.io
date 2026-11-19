@@ -4,11 +4,11 @@ Personal academic website of Josep M. Barberá, built with Jekyll on the [al-fol
 
 ## Local preview
 
-The upstream `al-folio:latest` Docker image (Ruby 4) fails to build this site, so use Ruby 3.2 (same as the deploy workflow):
+The upstream `al-folio:latest` Docker image (Ruby 4) fails to build this site, so use Ruby 3.3 (same as the deploy workflow):
 
 ```bash
 docker run -d --name jbarciv-preview -p 8080:8080 \
-  -v "$PWD":/srv/jekyll -v jbarciv-gems:/usr/local/bundle -w /srv/jekyll ruby:3.2 \
+  -v "$PWD":/srv/jekyll -v jbarciv-gems:/usr/local/bundle -w /srv/jekyll ruby:3.3 \
   bash -c "bundle install && bundle exec jekyll serve --port=8080 --host=0.0.0.0 --force_polling"
 ```
 

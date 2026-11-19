@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:trophy: Awarded a [CSIC iMOVE](https://imove.csic.es/) grant for a 3-month stay in 2027 at [Prof. Johannes Betz's AVS lab](https://www.mos.ed.tum.de/avs/startseite/), TUM! :de:
+:trophy: Awarded a [CSIC iMOVE](https://imove.csic.es/) grant for a 3-month stay (May–Jul 2027) at [Prof. Johannes Betz's AVS lab](https://www.mos.ed.tum.de/avs/startseite/), TUM! :de:

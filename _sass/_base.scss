@@ -1304,3 +1304,23 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+// News grouped by year: a small, muted year label with a hairline under it
+
+.news .news-year th {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+}
+
+.news .news-year:first-child th {
+  padding-top: 0.25rem;
+}
+
+.news .news-year + tr > * {
+  padding-top: 0.6rem;
+}

@@ -4,7 +4,7 @@
     <div
       class="table-responsive"
       {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+        style="max-height: max(60vw, 75vh)"
       {% endif %}
     >
       <table class="table table-sm table-borderless">
@@ -14,9 +14,17 @@
         {% else %}
           {% assign news_limit = news_size %}
         {% endif %}
+        {% assign current_year = '' %}
         {% for item in news limit: news_limit %}
+          {% assign item_year = item.date | date: '%Y' %}
+          {% if item_year != current_year %}
+            {% assign current_year = item_year %}
+            <tr class="news-year">
+              <th colspan="2">{{ item_year }}</th>
+            </tr>
+          {% endif %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <th scope="row" style="width: 15%; white-space: nowrap">{{ item.date | date: '%b %d' }}</th>
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}

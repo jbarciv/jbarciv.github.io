@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:rocket: Started a 3-month research fellowship at [IMDEA Materials](https://www.imdea.org/en/) with [Dr. Damien Tourret](https://materiales.imdea.org/people/damien-tourret/) and Thomas Isensee! :es:
+:rocket: Started a 3-month research fellowship at [IMDEA Materials](https://www.imdea.org/en/) with [Dr. Damien Tourret](https://materiales.imdea.org/people/damien-tourret/) and [Thomas Isensee](https://scholar.google.com/citations?user=B3oRXm4AAAAJ)! :es:
